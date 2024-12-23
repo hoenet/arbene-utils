@@ -1,1 +1,17 @@
+Die Einbindung von beliebigen Scannern mit Twain in Arbene geht mit Naps2 und Jpg2pdf unter Verwendung der GDT-Funktion:
+1. Die freie open source software Naps2 von https://naps2.com herunterladen
+2. Naps2 in ein bekanntes Verzeichnis installieren
+3. in Naps2 gewünschte Profile für Einzug, Flachbett, ggf. b7w, farbe etc für die eigene Scannerhardware anlegen, Profilname, z.B. HP7740DPL
+4. einfaches vbs-Script erstellen oder auf meiner website herunterladen: https://praxis-hoelzel.de/soft/naps2scan.vbs
+5. Das vbs-Script in einem einfachen Dateieditor (z.B. notepad++) editieren: Die Einträge bei prog = "", und path2scansoft = "", scandevice = "" jeweils anpassen
+6. jpg2pdf.zip auf meiner website herunterladen: https://praxis-hoelzel.de/soft/jpg2pdf.zip
+7. jpg2pdf.zip, entpacken, Verzeichnis in das o.g. prog-Verzeichnis reinkopieren
+8. In Arbene unter Einstellungen --> Stammdaten --> GDT-Programme --> Neu einen neuen GDT-Programmaufruf z.B. Name: "MeinFlachbettScanner_a4bw300" Aufrufparameter: "HP7740DPL" (=Naps2-Profilname, in Naps2 zuvor angelegt-s.o.) anlegen und bearbeiten
+Die -wahrscheinlich erforderliche- fake-GDT-Datei zum kopieren ins prog-Verzeichnis findet sich hier: https://praxis-hoelzel.de/soft/scan.gdt
 
+Fertig!
+---> Die Pfade zu den Dateien müssen natürlich alle stimmen!
+Probleme kann es mit den Zugriffsrechte auf die genannten Verzeichnisse geben. Diese müssen ggf. angepasst werden.
+Ich habe in Arbene mehrere verschiedene GDT-Programmaufrufe angelegt: Flachbett, Einzug, Duplex, Farbe, schwarz/weiss und verwende diese je nach Bedarf.
+Scanvorgang direkt aus Arbene->Proband->Kartei starten mit: Neu --> GDT --> GDT-Programmaufruf " MeinFlachbettScanner_a4bw300 "
+Das neue pdf kann dann in Arbene noch umbenannt werden und landet in der Probandenakte.
