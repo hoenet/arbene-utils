@@ -1,6 +1,3 @@
-Hallo,
-
-ich nutze seit fast 10 Jahren Arbene.
 
 hier unter /scan Dateien zur Einbindung von Scannern in Arbene.
 
